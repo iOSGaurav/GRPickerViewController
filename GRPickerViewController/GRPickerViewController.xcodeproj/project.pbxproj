@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		2FA6B131263D44F2003268FD /* GRPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA6B12F263D44F2003268FD /* GRPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FA6B158263D46CC003268FD /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B157263D46CC003268FD /* Countries.bundle */; };
+		2FA6B15D263D490E003268FD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15A263D490E003268FD /* UIView+Extension.swift */; };
+		2FA6B15E263D490E003268FD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15B263D490E003268FD /* UIImage+Extension.swift */; };
+		2FA6B15F263D490E003268FD /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15C263D490E003268FD /* UISearchBar+Extension.swift */; };
+		2FA6B161263D4953003268FD /* GRPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B160263D4953003268FD /* GRPickerViewController.swift */; };
+		2FA6B163263D49C1003268FD /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B162263D49C1003268FD /* LocalData.swift */; };
+		2FA6B165263D49E3003268FD /* DataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B164263D49E3003268FD /* DataInfo.swift */; };
+		2FA6B16A263D4A0E003268FD /* PhoneCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B167263D4A0E003268FD /* PhoneCodeTableViewCell.swift */; };
+		2FA6B16B263D4A0E003268FD /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B168263D4A0E003268FD /* CurrencyTableViewCell.swift */; };
+		2FA6B16C263D4A0E003268FD /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B169263D4A0E003268FD /* CountryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +25,15 @@
 		2FA6B12F263D44F2003268FD /* GRPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRPickerViewController.h; sourceTree = "<group>"; };
 		2FA6B130263D44F2003268FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA6B157263D46CC003268FD /* Countries.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Countries.bundle; sourceTree = "<group>"; };
+		2FA6B15A263D490E003268FD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2FA6B15B263D490E003268FD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		2FA6B15C263D490E003268FD /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
+		2FA6B160263D4953003268FD /* GRPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRPickerViewController.swift; sourceTree = "<group>"; };
+		2FA6B162263D49C1003268FD /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		2FA6B164263D49E3003268FD /* DataInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInfo.swift; sourceTree = "<group>"; };
+		2FA6B167263D4A0E003268FD /* PhoneCodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneCodeTableViewCell.swift; sourceTree = "<group>"; };
+		2FA6B168263D4A0E003268FD /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		2FA6B169263D4A0E003268FD /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +66,36 @@
 		2FA6B12E263D44F2003268FD /* GRPickerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2FA6B166263D4A0E003268FD /* Cell */,
+				2FA6B164263D49E3003268FD /* DataInfo.swift */,
+				2FA6B162263D49C1003268FD /* LocalData.swift */,
+				2FA6B159263D490E003268FD /* Extension */,
 				2FA6B157263D46CC003268FD /* Countries.bundle */,
 				2FA6B12F263D44F2003268FD /* GRPickerViewController.h */,
 				2FA6B130263D44F2003268FD /* Info.plist */,
+				2FA6B160263D4953003268FD /* GRPickerViewController.swift */,
 			);
 			path = GRPickerViewController;
+			sourceTree = "<group>";
+		};
+		2FA6B159263D490E003268FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2FA6B15A263D490E003268FD /* UIView+Extension.swift */,
+				2FA6B15B263D490E003268FD /* UIImage+Extension.swift */,
+				2FA6B15C263D490E003268FD /* UISearchBar+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FA6B166263D4A0E003268FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2FA6B167263D4A0E003268FD /* PhoneCodeTableViewCell.swift */,
+				2FA6B168263D4A0E003268FD /* CurrencyTableViewCell.swift */,
+				2FA6B169263D4A0E003268FD /* CountryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +177,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA6B16C263D4A0E003268FD /* CountryTableViewCell.swift in Sources */,
+				2FA6B15F263D490E003268FD /* UISearchBar+Extension.swift in Sources */,
+				2FA6B16A263D4A0E003268FD /* PhoneCodeTableViewCell.swift in Sources */,
+				2FA6B165263D49E3003268FD /* DataInfo.swift in Sources */,
+				2FA6B163263D49C1003268FD /* LocalData.swift in Sources */,
+				2FA6B16B263D4A0E003268FD /* CurrencyTableViewCell.swift in Sources */,
+				2FA6B161263D4953003268FD /* GRPickerViewController.swift in Sources */,
+				2FA6B15D263D490E003268FD /* UIView+Extension.swift in Sources */,
+				2FA6B15E263D490E003268FD /* UIImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
