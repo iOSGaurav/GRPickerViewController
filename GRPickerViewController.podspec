@@ -106,7 +106,7 @@ Pod::Spec.new do |spec|
 
   spec.resource  = "GRPickerViewController/GRPickerViewController/*.{png}"
   spec.resource_bundles = {
-    'GRPickerViewController' => ['GRPickerViewController/GRPickerViewController/Countries.bundle/*']
+    'GRPickerViewController' => ['GRPickerViewController/Countries.bundle/*']
 }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
