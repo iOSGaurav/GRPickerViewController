@@ -31,7 +31,7 @@ open class GRPickerViewController: UIViewController {
     
     fileprivate lazy var searchView: UIView = UIView()
     
-    fileprivate lazy var searchController: UISearchController = { [unowned self] in
+    fileprivate lazy var searchController: UISearchController = {
         $0.searchResultsUpdater = self
         $0.searchBar.delegate = self
         /// true if search bar in tableView header
@@ -43,7 +43,7 @@ open class GRPickerViewController: UIViewController {
     }(UISearchController(searchResultsController: nil))
     
     
-    fileprivate lazy var tableView: UITableView = { [unowned self] in
+    fileprivate lazy var tableView: UITableView = {
         $0.dataSource = self
         $0.delegate = self
         $0.rowHeight = UI.rowHeight

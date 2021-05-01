@@ -19,6 +19,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEF-NY-UfV">
                                 <rect key="frame" x="165" y="438" width="84" height="30"/>
                                 <state key="normal" title="Open Picker"/>
+                                <connections>
+                                    <action selector="btnOpenPicker" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5f-kN-A1S"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

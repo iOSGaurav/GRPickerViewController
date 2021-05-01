@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GRPickerViewController: UIViewController {
+open class GRPickerViewController: UIViewController {
     
     // MARK: - UI Metrics
     struct UI {
@@ -31,10 +31,9 @@ class GRPickerViewController: UIViewController {
     
     fileprivate lazy var searchView: UIView = UIView()
     
-    fileprivate lazy var searchController: UISearchController = { [unowned self] in
+    fileprivate lazy var searchController: UISearchController = {
         $0.searchResultsUpdater = self
         $0.searchBar.delegate = self
-//        $0.dimsBackgroundDuringPresentation = false
         /// true if search bar in tableView header
         $0.hidesNavigationBarDuringPresentation = true
         $0.searchBar.searchBarStyle = .minimal

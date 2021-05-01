@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction private func btnOpenPicker() {
-        let vc = GRPickerViewController()
-        
+        let vc = GRPickerViewController(type: .country)
+        self.navigationController?.present(vc, animated: true, completion: nil)
     }
 
 
