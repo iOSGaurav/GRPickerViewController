@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GRPickerViewController"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of GRPickerViewController."
 
   # This description is used to generate tags and improve search results.
@@ -104,9 +104,9 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "GRPickerViewController/GRPickerViewController/*.{png}"
+  # spec.resource  = "GRPickerViewController/GRPickerViewController/*.{png}"
   spec.resource_bundles = {
-    'GRPickerViewController' => ['GRPickerViewController/Countries.bundle/*']
+    'GRPickerViewController' => ['GRPickerViewController/GRPickerViewController/Countries.bundle/*']
 }
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
