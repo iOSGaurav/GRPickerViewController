@@ -1,0 +1,6 @@
+framework module GRPickerViewController {
+  umbrella header "GRPickerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

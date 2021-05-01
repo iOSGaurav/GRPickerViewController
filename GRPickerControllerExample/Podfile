@@ -6,5 +6,5 @@ target 'GRPickerControllerExample' do
   use_frameworks!
 
   # Pods for GRPickerControllerExample
-pod 'GRPickerViewController'
+pod 'GRPickerViewController',:git => 'https://github.com/iOSGaurav/GRPickerViewController.git', :branch => 'master'
 end

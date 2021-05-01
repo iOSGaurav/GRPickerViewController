@@ -13,6 +13,7 @@
 		2FA6B14B263D453A003268FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B149263D453A003268FD /* Main.storyboard */; };
 		2FA6B14D263D453D003268FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B14C263D453D003268FD /* Assets.xcassets */; };
 		2FA6B150263D453D003268FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B14E263D453D003268FD /* LaunchScreen.storyboard */; };
+		A35548904F0E101451CAE603 /* Pods_GRPickerControllerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52EB4414D1CA74C03C2356E /* Pods_GRPickerControllerExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		2FA6B14C263D453D003268FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA6B14F263D453D003268FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA6B151263D453D003268FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34D12FA56FE6D02D336A61CC /* Pods-GRPickerControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRPickerControllerExample.debug.xcconfig"; path = "Target Support Files/Pods-GRPickerControllerExample/Pods-GRPickerControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A2B085B0E52795CD047F5251 /* Pods-GRPickerControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GRPickerControllerExample.release.xcconfig"; path = "Target Support Files/Pods-GRPickerControllerExample/Pods-GRPickerControllerExample.release.xcconfig"; sourceTree = "<group>"; };
+		C52EB4414D1CA74C03C2356E /* Pods_GRPickerControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GRPickerControllerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35548904F0E101451CAE603 /* Pods_GRPickerControllerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2FA6B142263D453A003268FD /* GRPickerControllerExample */,
 				2FA6B141263D453A003268FD /* Products */,
+				EE23B7FEF083F18792B2C770 /* Pods */,
+				7FF239984A3CB32CEAD3974F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = GRPickerControllerExample;
 			sourceTree = "<group>";
 		};
+		7FF239984A3CB32CEAD3974F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C52EB4414D1CA74C03C2356E /* Pods_GRPickerControllerExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE23B7FEF083F18792B2C770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34D12FA56FE6D02D336A61CC /* Pods-GRPickerControllerExample.debug.xcconfig */,
+				A2B085B0E52795CD047F5251 /* Pods-GRPickerControllerExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FA6B154263D453D003268FD /* Build configuration list for PBXNativeTarget "GRPickerControllerExample" */;
 			buildPhases = (
+				2AB6F7A25B018EABE56A7670 /* [CP] Check Pods Manifest.lock */,
 				2FA6B13C263D453A003268FD /* Sources */,
 				2FA6B13D263D453A003268FD /* Frameworks */,
 				2FA6B13E263D453A003268FD /* Resources */,
+				06DAF427297A0078A0B8B2A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06DAF427297A0078A0B8B2A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GRPickerControllerExample/Pods-GRPickerControllerExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GRPickerControllerExample/Pods-GRPickerControllerExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GRPickerControllerExample/Pods-GRPickerControllerExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AB6F7A25B018EABE56A7670 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GRPickerControllerExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2FA6B13C263D453A003268FD /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		2FA6B155263D453D003268FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D12FA56FE6D02D336A61CC /* Pods-GRPickerControllerExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		2FA6B156263D453D003268FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B085B0E52795CD047F5251 /* Pods-GRPickerControllerExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
