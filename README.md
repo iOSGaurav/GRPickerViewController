@@ -20,8 +20,8 @@ A simple, customizable Picker for picking country , country code & Currency.
 
 ## Requirements
 
-- iOS 10.0+ Support latest release iOS 13
-- Xcode 10.2+ Support latest Xcode 11 with Swift 
+- iOS 10.0+ Support latest release iOS 14.5
+- Xcode 10.2+ Support latest Xcode 12 with Swift 5
 
 ## Getting Started
 Example:
