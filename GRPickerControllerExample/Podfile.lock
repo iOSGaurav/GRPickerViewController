@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   GRPickerViewController:
-    :commit: bfb544133492adec02027cb701ba9bf982953e3e
+    :commit: f9d08e36406e2f90f70dfa4749ed7efadb220781
     :git: https://github.com/iOSGaurav/GRPickerViewController.git
 
 SPEC CHECKSUMS:
