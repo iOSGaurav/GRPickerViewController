@@ -25,9 +25,5 @@ let package = Package(
             resources: [
                 .copy("GRPickerViewController.bundle")
             ]),
-        .testTarget(
-            name: "GRPickerViewController/GRPickerViewController",
-            dependencies: ["GRPickerViewController"],
-            path: "GRPickerViewController/GRPickerViewControllerTests"),
     ]
 )
