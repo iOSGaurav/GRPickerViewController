@@ -1,11 +1,24 @@
 //
 //  GRPickerViewController.swift
-//  GRPickerViewController
+//  Example
 //
 //  Created by Gaurav Parmar on 01/05/21.
 //
 
 import UIKit
+
+/// Image styles
+public enum ImageStyle {
+    
+    // Corner style will be applied
+    case corner
+    
+    // Circular style will be applied
+    case circular
+    
+    // Rectangle style will be applied
+    case normal
+}
 
 open class GRPickerViewController: UIViewController {
     
@@ -22,53 +35,63 @@ open class GRPickerViewController: UIViewController {
         case currency
     }
     
+    
+    internal var searchController = UISearchController(searchResultsController: nil)
+    internal let tableView =  UITableView()
+    
     fileprivate var type: PickerType
-
+    fileprivate var safeArea: UILayoutGuide!
+    
     fileprivate var orderedInfo = [String: [DataInfo]]()
     fileprivate var sortedInfoKeys = [String]()
     fileprivate var filteredInfo: [DataInfo] = []
     fileprivate var selectedInfo: DataInfo?
     
-    fileprivate lazy var searchView: UIView = UIView()
+    // MARK: - Publice Variables
+    public var statusBarStyle: UIStatusBarStyle? = .default
+    public var isStatusBarVisible = true
+    public var delegate : GRPickerDelegate?
     
-    fileprivate lazy var searchController: UISearchController = {
-        $0.searchResultsUpdater = self
-        $0.searchBar.delegate = self
-        /// true if search bar in tableView header
-        $0.hidesNavigationBarDuringPresentation = true
-        $0.searchBar.searchBarStyle = .minimal
-        $0.searchBar.textField?.textColor = .black
-        $0.searchBar.textField?.clearButtonMode = .whileEditing
-        return $0
-    }(UISearchController(searchResultsController: nil))
+    public var imgStyle: ImageStyle = .normal {
+        didSet { self.tableView.reloadData() }
+    }
     
+    public var labelFont: UIFont = UIFont.preferredFont(forTextStyle: .title3) {
+        didSet { self.tableView.reloadData() }
+    }
     
-    fileprivate lazy var tableView: UITableView = {
-        $0.dataSource = self
-        $0.delegate = self
-        $0.rowHeight = UI.rowHeight
-        $0.separatorColor = UI.separatorColor
-        $0.bounces = true
-        $0.backgroundColor = nil
-        $0.tableFooterView = UIView()
-        $0.sectionIndexBackgroundColor = .clear
-        $0.sectionIndexTrackingBackgroundColor = .clear
-        return $0
-    }(UITableView(frame: .zero, style: .plain))
-   
-    fileprivate lazy var indicatorView: UIActivityIndicatorView = {
-        $0.color = .lightGray
-        return $0
-    }(UIActivityIndicatorView(style: .whiteLarge))
+    public var labelColor: UIColor = UIColor.black {
+        didSet { self.tableView.reloadData() }
+    }
+    
+    public var detailFont: UIFont = UIFont.preferredFont(forTextStyle: .subheadline) {
+        didSet { self.tableView.reloadData() }
+    }
+    
+    public var detailColor: UIColor = UIColor.lightGray {
+        didSet { self.tableView.reloadData() }
+    }
+    
+    public var separatorLineColor: UIColor = UIColor.lightGray.withAlphaComponent(0.4) {
+        didSet { self.tableView.reloadData() }
+    }
+    
+    public var isImageHidden: Bool = false {
+        didSet { self.tableView.reloadData() }
+    }
+    
+    public var screenTite : String = "Select Country" {
+        didSet { self.title = screenTite }
+    }
+    
     
     // MARK: - Initialize
-    
     required public init(type: PickerType) {
         self.type = type
         super.init(nibName: nil, bundle: nil)
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -76,22 +99,68 @@ open class GRPickerViewController: UIViewController {
         let _ = searchController.view
     }
     
-    open override func loadView() {
-        view = tableView
-    }
-    
     open override func viewDidLoad() {
         super.viewDidLoad()
+        safeArea = view.layoutMarginsGuide
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = UIColor.systemBackground
+        } else {
+            view.backgroundColor = UIColor.white
+        }
+        // Setup view bar buttons
+        let uiBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop,
+                                                     target: self,
+                                                     action: #selector(self.crossButtonClicked(_:)))
+               
+        self.navigationItem.leftBarButtonItem = uiBarButtonItem
         
-        view.addSubview(indicatorView)
+        self.setUpTableView()
+        self.setUpSearchController()
+        self.getLocalData()
+    }
+    
+    private func setUpTableView() {
+        view.addSubview(tableView)
         
-        searchView.addSubview(searchController.searchBar)
-        tableView.tableHeaderView = searchView
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        //extendedLayoutIncludesOpaqueBars = true
-        //edgesForExtendedLayout = .bottom
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.contentInset = UIEdgeInsets.zero
+        tableView.rowHeight = UI.rowHeight
+        tableView.separatorColor = UI.separatorColor
+        tableView.topAnchor.constraint(equalTo: safeArea.topAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        
+        self.registerCell()
+    }
+    
+    private func setUpSearchController() {
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.searchBar.barStyle = .default
+        searchController.searchBar.sizeToFit()
+        searchController.searchBar.delegate = self
+        searchController.searchResultsUpdater = self
+        
+        if #available(iOS 11.0, *) {
+            self.navigationItem.searchController = searchController
+            self.navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
+        
         definesPresentationContext = true
-        
+    }
+    
+    private func registerCell() {
         switch type {
         case .country:
             tableView.register(CountryTableViewCell.self, forCellReuseIdentifier: CountryTableViewCell.identifier)
@@ -100,37 +169,19 @@ open class GRPickerViewController: UIViewController {
         case .currency:
             tableView.register(CurrencyTableViewCell.self, forCellReuseIdentifier: CurrencyTableViewCell.identifier)
         }
-        
-        updateInfo()
     }
     
-    open override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        tableView.tableHeaderView?.height = 57
-        searchController.searchBar.sizeToFit()
-        searchController.searchBar.frame.size.width = searchView.frame.size.width
-        searchController.searchBar.frame.size.height = searchView.frame.size.height
-    }
-    
-    open override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        indicatorView.center = view.center
-        preferredContentSize.height = tableView.contentSize.height
-    }
-    
-    func updateInfo() {
-        indicatorView.startAnimating()
+    private func getLocalData() {
         
         LocalData.fetch { [unowned self] result in
             switch result {
-                
+            
             case .success(let orderedInfo):
                 let data: [String: [DataInfo]] = orderedInfo
                 self.orderedInfo = data
                 self.sortedInfoKeys = Array(self.orderedInfo.keys).sorted(by: <)
                 
                 DispatchQueue.main.async {
-                    self.indicatorView.stopAnimating()
                     self.tableView.reloadData()
                 }
                 
@@ -139,23 +190,10 @@ open class GRPickerViewController: UIViewController {
             }
         }
     }
-
-    func sortFilteredInfo() {
-        filteredInfo = filteredInfo.sorted { lhs, rhs in
-            switch type {
-            case .country:
-                return lhs.country < rhs.country
-            case .phoneCode:
-                return lhs.country < rhs.country
-            case .currency:
-                return lhs.country < rhs.country
-            }
-        }
-    }
     
-    func info(at indexPath: IndexPath) -> DataInfo? {
+    fileprivate func info(at indexPath: IndexPath) -> DataInfo? {
         if searchController.isActive {
-            return filteredInfo[indexPath.row]
+            return filteredInfo.count > 0 ? filteredInfo[indexPath.row] : nil
         }
         let key: String = sortedInfoKeys[indexPath.section]
         if let info = orderedInfo[key]?[indexPath.row] {
@@ -164,7 +202,7 @@ open class GRPickerViewController: UIViewController {
         return nil
     }
     
-    func indexPathOfSelectedInfo() -> IndexPath? {
+    fileprivate func indexPathOfSelectedInfo() -> IndexPath? {
         guard let selectedInfo = selectedInfo else { return nil }
         if searchController.isActive {
             for row in 0 ..< filteredInfo.count {
@@ -185,49 +223,28 @@ open class GRPickerViewController: UIViewController {
         return nil
     }
     
-}
-// MARK: - UISearchResultsUpdating
-
-extension GRPickerViewController: UISearchResultsUpdating {
-    
-    public func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text, searchController.isActive {
-            filteredInfo = []
-            if searchText.count > 0, let values = orderedInfo[String(searchText[searchText.startIndex])] {
-                filteredInfo.append(contentsOf: values.filter { $0.country.hasPrefix(searchText) })
-            } else {
-                orderedInfo.forEach { key, value in
-                    filteredInfo += value
-                }
+    fileprivate func sortFilteredInfo() {
+        filteredInfo = filteredInfo.sorted { lhs, rhs in
+            switch type {
+            case .country:
+                return lhs.country < rhs.country
+            case .phoneCode:
+                return lhs.country < rhs.country
+            case .currency:
+                return lhs.country < rhs.country
             }
-            sortFilteredInfo()
         }
-        tableView.reloadData()
-        
-        guard let selectedIndexPath = indexPathOfSelectedInfo() else { return }
-        tableView.selectRow(at: selectedIndexPath, animated: false, scrollPosition: .none)
     }
-}
-// MARK: - UISearchBarDelegate
-
-extension GRPickerViewController: UISearchBarDelegate {
     
-    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-
+    // MARK: - Cross Button Action
+    @objc private func crossButtonClicked(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true) {
+            self.delegate?.didClose(self)
+        }
     }
 }
-// MARK: - TableViewDelegate
 
-extension GRPickerViewController: UITableViewDelegate {
-    
-    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let info = info(at: indexPath) else { return }
-        selectedInfo = info
-//        selection?(selectedInfo)
-    }
-}
-// MARK: - TableViewDataSource
-extension GRPickerViewController: UITableViewDataSource {
+extension GRPickerViewController : UITableViewDataSource {
     
     public func numberOfSections(in tableView: UITableView) -> Int {
         if searchController.isActive { return 1 }
@@ -265,7 +282,7 @@ extension GRPickerViewController: UITableViewDataSource {
         let cell: UITableViewCell
         
         switch type {
-            
+        
         case .country:
             cell = tableView.dequeueReusableCell(withIdentifier: CountryTableViewCell.identifier) as! CountryTableViewCell
             cell.textLabel?.text = info.country
@@ -281,20 +298,74 @@ extension GRPickerViewController: UITableViewDataSource {
             cell.detailTextLabel?.text = info.country
         }
         
-        cell.detailTextLabel?.textColor = .darkGray
+        cell.textLabel?.font = labelFont
+        cell.textLabel?.textColor = labelColor
         
-        DispatchQueue.main.async {
-            let size: CGSize = CGSize(width: 32, height: 24)
-            let flag: UIImage? = info.flag?.imageWithSize(size: size, roundedRadius: 3)
-            cell.imageView?.image = flag
-            cell.setNeedsLayout()
-            cell.layoutIfNeeded()
+        cell.detailTextLabel?.font = detailFont
+        cell.detailTextLabel?.textColor = labelColor
+        
+        if !isImageHidden {
+            var img : UIImage?
+            
+            if imgStyle == .normal {
+                let size: CGSize = CGSize(width: 32, height: 24)
+                img = info.flag?.imageWithSize(size: size, roundedRadius: 0)
+            }else if imgStyle == .corner {
+                let size: CGSize = CGSize(width: 32, height: 24)
+                img = info.flag?.imageWithSize(size: size, roundedRadius: 3)
+            }else if imgStyle == .circular {
+                let size: CGSize = CGSize(width: 30, height: 30)
+                img = info.flag?.imageWithSize(size: size, roundedRadius: 15)
+            }
+            
+            cell.imageView?.image = img
+        }else {
+            cell.imageView?.isHidden = true
         }
+        
+        
         
         if let selected = selectedInfo, selected.country == info.country {
             cell.isSelected = true
         }
         
         return cell
+    }
+}
+extension GRPickerViewController : UITableViewDelegate {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let info = info(at: indexPath) else { return }
+        selectedInfo = info
+        self.dismiss(animated: true) {
+            self.delegate?.didSelected(self, with: self.selectedInfo)
+        }
+    }
+}
+extension GRPickerViewController : UISearchResultsUpdating {
+    
+    public func updateSearchResults(for searchController: UISearchController) {
+        if let searchText = searchController.searchBar.text, searchController.isActive {
+            filteredInfo = []
+            if searchText.count > 0, let values = orderedInfo[String(searchText[searchText.startIndex])] {
+                filteredInfo.append(contentsOf: values.filter { $0.country.hasPrefix(searchText) })
+            } else {
+                orderedInfo.forEach { key, value in
+                    filteredInfo += value
+                }
+            }
+            sortFilteredInfo()
+        }
+        tableView.reloadData()
+        
+        guard let selectedIndexPath = indexPathOfSelectedInfo() else { return }
+        tableView.selectRow(at: selectedIndexPath, animated: false, scrollPosition: .none)
+    }
+}
+// MARK: - UISearchBarDelegate
+
+extension GRPickerViewController: UISearchBarDelegate {
+    
+    public func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
     }
 }

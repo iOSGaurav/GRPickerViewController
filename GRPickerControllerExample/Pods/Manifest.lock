@@ -2,21 +2,15 @@ PODS:
   - GRPickerViewController (0.0.4)
 
 DEPENDENCIES:
-  - GRPickerViewController (from `https://github.com/iOSGaurav/GRPickerViewController.git`, branch `master`)
+  - GRPickerViewController (from `~/Documents/Projects/Gaurav/Controls/GRPickerViewController`)
 
 EXTERNAL SOURCES:
   GRPickerViewController:
-    :branch: master
-    :git: https://github.com/iOSGaurav/GRPickerViewController.git
-
-CHECKOUT OPTIONS:
-  GRPickerViewController:
-    :commit: 6627632a50bcf2ff0e6803e58d6240fd61cec211
-    :git: https://github.com/iOSGaurav/GRPickerViewController.git
+    :path: "~/Documents/Projects/Gaurav/Controls/GRPickerViewController"
 
 SPEC CHECKSUMS:
   GRPickerViewController: 62c8b202de333e59b0a0bd7b5407c19634704af7
 
-PODFILE CHECKSUM: daa16a6c9dcf8d5145d993f967c62f1edaf91a5d
+PODFILE CHECKSUM: d64980ff42bff0dbc5bc754c2ce3df0deed64278
 
 COCOAPODS: 1.10.1
