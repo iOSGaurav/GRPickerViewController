@@ -20,7 +20,8 @@ public struct DataInfo {
     public var phoneCode: String
     
     public var flag: UIImage? {
-        return UIImage(named: "Countries.bundle/Images/\(code.uppercased())", in: Bundle.main, compatibleWith: nil)
+        let bundle = Bundle(for: GRPickerViewController.self)
+        return UIImage(named: "GRPickerViewController.bundle/Images/\(code.uppercased())", in: bundle, compatibleWith: nil)
     }
     
     public var currencyCode: String? {
