@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053EE484247733D8FAFE69D3FB315636 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA150413C711C0A9F802FDA333F71CB /* LocalData.swift */; };
-		0DBEBC1514D51CEDA76EEE54A8161AA1 /* GRPickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E5829C5D744EDD5FF7A5EC4DC6F5296 /* GRPickerViewController-dummy.m */; };
-		0E8F32E7B5781A75A92C8AD42A90C841 /* DataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ABE6AF84835681EAE0318C5D0EAACF /* DataInfo.swift */; };
-		108EA5B4C6226525FB736147378BD691 /* Flags in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B0FC83C65EE58774464694527A9CE /* Flags */; };
-		2C534BC1767C87ABEC037AFEE0099A44 /* PhoneCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0166AC067C9A6298F1BBB7E70D0DD2CA /* PhoneCodeTableViewCell.swift */; };
-		3A3614809572E045FF964D2CDF419991 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = C4838709FB9C1A6F0F93013BCDC1BAA0 /* Images */; };
-		5FD1E8C07F245DEE0EDBEE2DC3000577 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 09555A4C978D2785DC6B03221D590947 /* Data */; };
-		8A74EF804A7BF09DBB56716FA2008DE4 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410EC91B62305F6772A08CD9400526A5 /* UIImage+Extension.swift */; };
-		8C6BC9E06DD1BDAB442736676F1A9BCA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606718BC83437BD657D148DA5462A45 /* UIView+Extension.swift */; };
-		9655D7078964B73B8694B0AAF0D5DA0E /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326E840DDC8F46035C1D26B5EF7E4B47 /* CountryTableViewCell.swift */; };
-		9B3A01FB88F1FE07D4E2F4A3499D51B7 /* GRPickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F05E3AF680519075511829E42F925E43 /* GRPickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C3BF8C919E1D047A51D1A073C0AD5B7 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = B589E5F0F0F22ADDBC01E0FB789D72BB /* Images */; };
+		2258D230062113F8237FA7A44E7BE45C /* Images in Resources */ = {isa = PBXBuildFile; fileRef = B589E5F0F0F22ADDBC01E0FB789D72BB /* Images */; };
+		2C9549A858EE30DF9221BE3314ACAF79 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA526753D9363BB60379C77CCCFC3C63 /* LocalData.swift */; };
+		319DF1CC285A8EEEFD254BDC6912F96B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B7F1C2E7FA1239D88BCACBFDF6F86 /* UIImage+Extension.swift */; };
+		4610A9F739F93FE953DC374388C9EB1B /* Flags in Resources */ = {isa = PBXBuildFile; fileRef = 1AA72DC6743AAD0A0EF70C7E580439BB /* Flags */; };
+		4E986A23EE0F45E63F541A953076FD1C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195CD756A8D6115B9EC2C4DAF2D1D65A /* UIView+Extension.swift */; };
+		5451B2F7409A3DC63F0ABE078453A165 /* GRPickerViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E538F2C5E56435160E499A8A30F84B88 /* GRPickerViewController.bundle */; };
+		5601951C7B8CCCE3D79B0C61F36E5BAD /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C655874E91FFB93B8659EE9B48611B /* CurrencyTableViewCell.swift */; };
+		5A44C472FEF407EECF10A2F56906C5A5 /* GRPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AEA05AC5181E3CEDC2D8FA5FEC6C81 /* GRPickerViewController.swift */; };
+		6611AC1452EB446018EEE7CA3F670CEA /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9DA32AB6DBD3F73BBD94028DE517F18D /* Data */; };
+		724A70A32F104EAA4B694F8E18436893 /* GRPickerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729D583D961132D1D6490CA97642D36 /* GRPickerViewController-dummy.m */; };
+		8F1EDE133E93AFDA5071B238FDDE62F2 /* DataInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48857508A6C69E9B2B942A441BB8AF7F /* DataInfo.swift */; };
+		908325F4878D71B8D0CD0997AA94F59C /* GRPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C899A5F2E89E9DD5D4129AFE1520FE /* GRPickerDelegate.swift */; };
+		9229FE9FBF29B3D8CC1DEAFBE99085E9 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B693B0EF8C2D39C0A91F506DCBA7B6C1 /* CountryTableViewCell.swift */; };
+		992519A8FA1926262D28536B39B4E70B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9E9E907D50604A5585276011ACD8DB48 /* Pods-GRPickerControllerExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C88603D1E0956E13573CECCFC043C7F9 /* Pods-GRPickerControllerExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9EBD1118CB71C15ED508D3D90B897A64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B4AB81CD2EED68EF3A8E37037D818C21 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D24100D542AE6B20D900B874CE122E /* UISearchBar+Extension.swift */; };
-		D4A887B312245E3204B381482041AE5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A0F4D45F4CCA0C3BC3C3AD5726A9B605 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 9DA32AB6DBD3F73BBD94028DE517F18D /* Data */; };
+		BC5F95723D4C2B0382C89390BA3BCBE4 /* PhoneCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ECCB311C540CEA31562EA07BD3271A /* PhoneCodeTableViewCell.swift */; };
 		D811B9F5F6397843FF7E75BC311C23B7 /* Pods-GRPickerControllerExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3551554B160989745FE3DE084021C7 /* Pods-GRPickerControllerExample-dummy.m */; };
-		E15637F3DF22DB9BB95D8FD2862E164F /* GRPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02277E831549B9344A3BA8D7250A6EA5 /* GRPickerViewController.swift */; };
-		F08B1F7D709FD32BED0FB5A022D780CB /* GRPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CB027C72B1C77E1E83426835302E8F /* GRPickerDelegate.swift */; };
-		F26979785E6291182B9352F51A7E147F /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446EF0F52E2778C000384A294B7C6DF6 /* CurrencyTableViewCell.swift */; };
+		D893BF5F12B78BC098F7EB96B4FE2ACE /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27C6303646C21235815E75937191560 /* UISearchBar+Extension.swift */; };
+		E25DDDC967DDC7B544FB567EEB04DFFD /* GRPickerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 855CC403E99C9BFF882412A9491194A1 /* GRPickerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F39F711C6EDD13A9D0CBF28F8F40E27C /* Flags in Resources */ = {isa = PBXBuildFile; fileRef = 1AA72DC6743AAD0A0EF70C7E580439BB /* Flags */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,58 +40,74 @@
 			remoteGlobalIDString = F28C24FFA45B9120FED79E22E0EFA841;
 			remoteInfo = GRPickerViewController;
 		};
+		9F49AF3BA1D677A55508CA736472A8D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A85EA0147CF2E0E74B23CC97485096E;
+			remoteInfo = "GRPickerViewController-GRPickerViewController";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0166AC067C9A6298F1BBB7E70D0DD2CA /* PhoneCodeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneCodeTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/PhoneCodeTableViewCell.swift; sourceTree = "<group>"; };
-		02277E831549B9344A3BA8D7250A6EA5 /* GRPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPickerViewController.swift; path = GRPickerViewController/GRPickerViewController/GRPickerViewController.swift; sourceTree = "<group>"; };
-		09555A4C978D2785DC6B03221D590947 /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = GRPickerViewController/GRPickerViewController/Countries.bundle/Data; sourceTree = "<group>"; };
 		0B3551554B160989745FE3DE084021C7 /* Pods-GRPickerControllerExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GRPickerControllerExample-dummy.m"; sourceTree = "<group>"; };
-		24CB027C72B1C77E1E83426835302E8F /* GRPickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPickerDelegate.swift; path = GRPickerViewController/GRPickerViewController/GRPickerDelegate.swift; sourceTree = "<group>"; };
-		326E840DDC8F46035C1D26B5EF7E4B47 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/CountryTableViewCell.swift; sourceTree = "<group>"; };
-		32D24100D542AE6B20D900B874CE122E /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UISearchBar+Extension.swift"; sourceTree = "<group>"; };
-		410EC91B62305F6772A08CD9400526A5 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		0FB7895CDCEF58B4D0859CE3C1B173CF /* GRPickerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRPickerViewController.modulemap; sourceTree = "<group>"; };
+		195CD756A8D6115B9EC2C4DAF2D1D65A /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UIView+Extension.swift"; sourceTree = "<group>"; };
+		1AA72DC6743AAD0A0EF70C7E580439BB /* Flags */ = {isa = PBXFileReference; includeInIndex = 1; name = Flags; path = GRPickerViewController/GRPickerViewController/GRPickerViewController.bundle/Flags; sourceTree = "<group>"; };
+		29C899A5F2E89E9DD5D4129AFE1520FE /* GRPickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPickerDelegate.swift; path = GRPickerViewController/GRPickerViewController/GRPickerDelegate.swift; sourceTree = "<group>"; };
+		31C655874E91FFB93B8659EE9B48611B /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		3729D583D961132D1D6490CA97642D36 /* GRPickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRPickerViewController-dummy.m"; sourceTree = "<group>"; };
+		39AEA05AC5181E3CEDC2D8FA5FEC6C81 /* GRPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GRPickerViewController.swift; path = GRPickerViewController/GRPickerViewController/GRPickerViewController.swift; sourceTree = "<group>"; };
 		416B176537DBED4FCC4EC38B2F671439 /* Pods-GRPickerControllerExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GRPickerControllerExample-frameworks.sh"; sourceTree = "<group>"; };
-		446EF0F52E2778C000384A294B7C6DF6 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CurrencyTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		465D4BBF4021BD6BDAE4768DB3D6051A /* GRPickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRPickerViewController-prefix.pch"; sourceTree = "<group>"; };
+		48857508A6C69E9B2B942A441BB8AF7F /* DataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataInfo.swift; path = GRPickerViewController/GRPickerViewController/DataInfo.swift; sourceTree = "<group>"; };
+		54ECCB311C540CEA31562EA07BD3271A /* PhoneCodeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneCodeTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/PhoneCodeTableViewCell.swift; sourceTree = "<group>"; };
 		62083A6C5286E3ADB1ED531E395F9C3A /* Pods-GRPickerControllerExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRPickerControllerExample-Info.plist"; sourceTree = "<group>"; };
-		6B1B0FC83C65EE58774464694527A9CE /* Flags */ = {isa = PBXFileReference; includeInIndex = 1; name = Flags; path = GRPickerViewController/GRPickerViewController/Countries.bundle/Flags; sourceTree = "<group>"; };
-		6E5829C5D744EDD5FF7A5EC4DC6F5296 /* GRPickerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GRPickerViewController-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73331E434D95152DC6F4B2D4078509A7 /* Pods-GRPickerControllerExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GRPickerControllerExample.modulemap"; sourceTree = "<group>"; };
-		74DC9108CB1A53B099D533C56AF6EF3E /* GRPickerViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRPickerViewController.debug.xcconfig; sourceTree = "<group>"; };
 		7BABAA9DFF86D2EC872612547495C588 /* Pods-GRPickerControllerExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GRPickerControllerExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7ED210114092D19D31C2DD3F864534B5 /* GRPickerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GRPickerViewController.modulemap; sourceTree = "<group>"; };
+		855CC403E99C9BFF882412A9491194A1 /* GRPickerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRPickerViewController-umbrella.h"; sourceTree = "<group>"; };
 		8B29F724D35AA4ED8813A9747CB05021 /* GRPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GRPickerViewController.framework; path = GRPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DA32AB6DBD3F73BBD94028DE517F18D /* Data */ = {isa = PBXFileReference; includeInIndex = 1; name = Data; path = GRPickerViewController/GRPickerViewController/GRPickerViewController.bundle/Data; sourceTree = "<group>"; };
 		9E3817389A54A928636F0736241D6F23 /* Pods-GRPickerControllerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRPickerControllerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A27C6303646C21235815E75937191560 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISearchBar+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		A31AEA648CD273CAF6F5C1E1A0AD8AEA /* Pods_GRPickerControllerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GRPickerControllerExample.framework; path = "Pods-GRPickerControllerExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A606718BC83437BD657D148DA5462A45 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UIView+Extension.swift"; sourceTree = "<group>"; };
-		A9007BC87295D32E0A5B293F15AA5AC8 /* GRPickerViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRPickerViewController.release.xcconfig; sourceTree = "<group>"; };
-		A90492BDB68EB0BE7E88C968CEEA4630 /* GRPickerViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRPickerViewController-Info.plist"; sourceTree = "<group>"; };
+		A32B7F1C2E7FA1239D88BCACBFDF6F86 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "GRPickerViewController/GRPickerViewController/Extension/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AA70BB9A48EB516AA9982CA2AB1C404E /* Pods-GRPickerControllerExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GRPickerControllerExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		B1D08B40B308D2FE3644CF1F16D83D00 /* GRPickerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRPickerViewController-prefix.pch"; sourceTree = "<group>"; };
-		B8ABE6AF84835681EAE0318C5D0EAACF /* DataInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataInfo.swift; path = GRPickerViewController/GRPickerViewController/DataInfo.swift; sourceTree = "<group>"; };
-		BAA150413C711C0A9F802FDA333F71CB /* LocalData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalData.swift; path = GRPickerViewController/GRPickerViewController/LocalData.swift; sourceTree = "<group>"; };
-		C4838709FB9C1A6F0F93013BCDC1BAA0 /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = GRPickerViewController/GRPickerViewController/Countries.bundle/Images; sourceTree = "<group>"; };
+		AEF9ADAE0E38A552790EEFA40D0A8BB9 /* GRPickerViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GRPickerViewController-Info.plist"; sourceTree = "<group>"; };
+		B589E5F0F0F22ADDBC01E0FB789D72BB /* Images */ = {isa = PBXFileReference; includeInIndex = 1; name = Images; path = GRPickerViewController/GRPickerViewController/GRPickerViewController.bundle/Images; sourceTree = "<group>"; };
+		B693B0EF8C2D39C0A91F506DCBA7B6C1 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CountryTableViewCell.swift; path = GRPickerViewController/GRPickerViewController/Cell/CountryTableViewCell.swift; sourceTree = "<group>"; };
 		C88603D1E0956E13573CECCFC043C7F9 /* Pods-GRPickerControllerExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GRPickerControllerExample-umbrella.h"; sourceTree = "<group>"; };
 		CABC02125E2550EAB258C24A33D9F018 /* Pods-GRPickerControllerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GRPickerControllerExample.release.xcconfig"; sourceTree = "<group>"; };
-		F05E3AF680519075511829E42F925E43 /* GRPickerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GRPickerViewController-umbrella.h"; sourceTree = "<group>"; };
+		D833A3F094F604E9816830646946DA75 /* GRPickerViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRPickerViewController.debug.xcconfig; sourceTree = "<group>"; };
+		DF1C60C9716A295DFC1348E20D475461 /* GRPickerViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GRPickerViewController.release.xcconfig; sourceTree = "<group>"; };
+		E538F2C5E56435160E499A8A30F84B88 /* GRPickerViewController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GRPickerViewController.bundle; path = "GRPickerViewController-GRPickerViewController.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA526753D9363BB60379C77CCCFC3C63 /* LocalData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalData.swift; path = GRPickerViewController/GRPickerViewController/LocalData.swift; sourceTree = "<group>"; };
+		ED8B1B2E5D861A0F609E96757A8FC43E /* ResourceBundle-GRPickerViewController-GRPickerViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GRPickerViewController-GRPickerViewController-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D03C8B7E0E58C92B20AD2359F20FE0D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D4A887B312245E3204B381482041AE5B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		776A9B9AED47E1C02E53E16150258B39 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9EBD1118CB71C15ED508D3D90B897A64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D010DC504B56409AC776E35F0549B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8313FB85EA16580B9B7ED8A699E50121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992519A8FA1926262D28536B39B4E70B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,17 +117,43 @@
 		030990DC6E1D3B4CE1371F9A86A6E41A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EE5B5715B4A7DB6C9538420D08EE62EF /* GRPickerViewController */,
+				D1F17BAF737EE7867EFD5B59B411BDA9 /* GRPickerViewController */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		1156EE3ADAAB428FAF077EA14C68D426 /* Resources */ = {
+		0E82EBF2921711761B4BA9C9414D1EA4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				09555A4C978D2785DC6B03221D590947 /* Data */,
-				6B1B0FC83C65EE58774464694527A9CE /* Flags */,
-				C4838709FB9C1A6F0F93013BCDC1BAA0 /* Images */,
+				0FB7895CDCEF58B4D0859CE3C1B173CF /* GRPickerViewController.modulemap */,
+				3729D583D961132D1D6490CA97642D36 /* GRPickerViewController-dummy.m */,
+				AEF9ADAE0E38A552790EEFA40D0A8BB9 /* GRPickerViewController-Info.plist */,
+				465D4BBF4021BD6BDAE4768DB3D6051A /* GRPickerViewController-prefix.pch */,
+				855CC403E99C9BFF882412A9491194A1 /* GRPickerViewController-umbrella.h */,
+				D833A3F094F604E9816830646946DA75 /* GRPickerViewController.debug.xcconfig */,
+				DF1C60C9716A295DFC1348E20D475461 /* GRPickerViewController.release.xcconfig */,
+				ED8B1B2E5D861A0F609E96757A8FC43E /* ResourceBundle-GRPickerViewController-GRPickerViewController-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GRPickerViewController";
+			sourceTree = "<group>";
+		};
+		18F57F31204C205FE87B351729821743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E538F2C5E56435160E499A8A30F84B88 /* GRPickerViewController.bundle */,
+				8B29F724D35AA4ED8813A9747CB05021 /* GRPickerViewController.framework */,
+				A31AEA648CD273CAF6F5C1E1A0AD8AEA /* Pods_GRPickerControllerExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CF7A76F9F1D7C966FCFE8315C71A1B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA32AB6DBD3F73BBD94028DE517F18D /* Data */,
+				1AA72DC6743AAD0A0EF70C7E580439BB /* Flags */,
+				B589E5F0F0F22ADDBC01E0FB789D72BB /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -128,21 +174,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		88CD6AC906160CD09D00569E05853772 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7ED210114092D19D31C2DD3F864534B5 /* GRPickerViewController.modulemap */,
-				6E5829C5D744EDD5FF7A5EC4DC6F5296 /* GRPickerViewController-dummy.m */,
-				A90492BDB68EB0BE7E88C968CEEA4630 /* GRPickerViewController-Info.plist */,
-				B1D08B40B308D2FE3644CF1F16D83D00 /* GRPickerViewController-prefix.pch */,
-				F05E3AF680519075511829E42F925E43 /* GRPickerViewController-umbrella.h */,
-				74DC9108CB1A53B099D533C56AF6EF3E /* GRPickerViewController.debug.xcconfig */,
-				A9007BC87295D32E0A5B293F15AA5AC8 /* GRPickerViewController.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GRPickerViewController";
-			sourceTree = "<group>";
-		};
 		8947CF700FFFF32E2C47ABFFCCDF238B /* Pods-GRPickerControllerExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,24 +191,35 @@
 			path = "Target Support Files/Pods-GRPickerControllerExample";
 			sourceTree = "<group>";
 		};
-		BA2E1ADE70EC58DF750D5F5FA18BE4CD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B29F724D35AA4ED8813A9747CB05021 /* GRPickerViewController.framework */,
-				A31AEA648CD273CAF6F5C1E1A0AD8AEA /* Pods_GRPickerControllerExample.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				030990DC6E1D3B4CE1371F9A86A6E41A /* Pods */,
-				BA2E1ADE70EC58DF750D5F5FA18BE4CD /* Products */,
+				18F57F31204C205FE87B351729821743 /* Products */,
 				4F9CFF6F50C2CD1C8BC59BF53A1536DB /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1F17BAF737EE7867EFD5B59B411BDA9 /* GRPickerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B693B0EF8C2D39C0A91F506DCBA7B6C1 /* CountryTableViewCell.swift */,
+				31C655874E91FFB93B8659EE9B48611B /* CurrencyTableViewCell.swift */,
+				48857508A6C69E9B2B942A441BB8AF7F /* DataInfo.swift */,
+				29C899A5F2E89E9DD5D4129AFE1520FE /* GRPickerDelegate.swift */,
+				39AEA05AC5181E3CEDC2D8FA5FEC6C81 /* GRPickerViewController.swift */,
+				EA526753D9363BB60379C77CCCFC3C63 /* LocalData.swift */,
+				54ECCB311C540CEA31562EA07BD3271A /* PhoneCodeTableViewCell.swift */,
+				A32B7F1C2E7FA1239D88BCACBFDF6F86 /* UIImage+Extension.swift */,
+				A27C6303646C21235815E75937191560 /* UISearchBar+Extension.swift */,
+				195CD756A8D6115B9EC2C4DAF2D1D65A /* UIView+Extension.swift */,
+				3CF7A76F9F1D7C966FCFE8315C71A1B6 /* Resources */,
+				0E82EBF2921711761B4BA9C9414D1EA4 /* Support Files */,
+			);
+			name = GRPickerViewController;
+			path = GRPickerViewController;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -188,34 +230,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EE5B5715B4A7DB6C9538420D08EE62EF /* GRPickerViewController */ = {
-			isa = PBXGroup;
-			children = (
-				326E840DDC8F46035C1D26B5EF7E4B47 /* CountryTableViewCell.swift */,
-				446EF0F52E2778C000384A294B7C6DF6 /* CurrencyTableViewCell.swift */,
-				B8ABE6AF84835681EAE0318C5D0EAACF /* DataInfo.swift */,
-				24CB027C72B1C77E1E83426835302E8F /* GRPickerDelegate.swift */,
-				02277E831549B9344A3BA8D7250A6EA5 /* GRPickerViewController.swift */,
-				BAA150413C711C0A9F802FDA333F71CB /* LocalData.swift */,
-				0166AC067C9A6298F1BBB7E70D0DD2CA /* PhoneCodeTableViewCell.swift */,
-				410EC91B62305F6772A08CD9400526A5 /* UIImage+Extension.swift */,
-				32D24100D542AE6B20D900B874CE122E /* UISearchBar+Extension.swift */,
-				A606718BC83437BD657D148DA5462A45 /* UIView+Extension.swift */,
-				1156EE3ADAAB428FAF077EA14C68D426 /* Resources */,
-				88CD6AC906160CD09D00569E05853772 /* Support Files */,
-			);
-			name = GRPickerViewController;
-			path = GRPickerViewController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		617C8465CEE85E3B600D7B45038B9014 /* Headers */ = {
+		46D9699F4B630E34D72DFE53DEF83D4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B3A01FB88F1FE07D4E2F4A3499D51B7 /* GRPickerViewController-umbrella.h in Headers */,
+				E25DDDC967DDC7B544FB567EEB04DFFD /* GRPickerViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,18 +271,36 @@
 			productReference = A31AEA648CD273CAF6F5C1E1A0AD8AEA /* Pods_GRPickerControllerExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F28C24FFA45B9120FED79E22E0EFA841 /* GRPickerViewController */ = {
+		6A85EA0147CF2E0E74B23CC97485096E /* GRPickerViewController-GRPickerViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 946CE379CFE69C299C78BD4833DFA4F7 /* Build configuration list for PBXNativeTarget "GRPickerViewController" */;
+			buildConfigurationList = 77A72D06AABE81B1E2C095110AF36FB9 /* Build configuration list for PBXNativeTarget "GRPickerViewController-GRPickerViewController" */;
 			buildPhases = (
-				617C8465CEE85E3B600D7B45038B9014 /* Headers */,
-				B6C0803F40EABE7B8571FC26057D4532 /* Sources */,
-				2D03C8B7E0E58C92B20AD2359F20FE0D /* Frameworks */,
-				BD81A6F225D2FABFBF7211578A35DEE8 /* Resources */,
+				33E09A1C4B9D47774EDD8576A012AA63 /* Sources */,
+				7D010DC504B56409AC776E35F0549B0F /* Frameworks */,
+				EDE11058BF13469A555E9D40638FE6A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = "GRPickerViewController-GRPickerViewController";
+			productName = "GRPickerViewController-GRPickerViewController";
+			productReference = E538F2C5E56435160E499A8A30F84B88 /* GRPickerViewController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F28C24FFA45B9120FED79E22E0EFA841 /* GRPickerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BF234BE5664926E3B0ACE9E13E78EF /* Build configuration list for PBXNativeTarget "GRPickerViewController" */;
+			buildPhases = (
+				46D9699F4B630E34D72DFE53DEF83D4B /* Headers */,
+				2A8813A3ACA867FDD8AAFB97108720D6 /* Sources */,
+				8313FB85EA16580B9B7ED8A699E50121 /* Frameworks */,
+				70C341C66DE1FCC90662CB76965C9850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				642788FE8565DD5A87253CFAB5CE7E19 /* PBXTargetDependency */,
 			);
 			name = GRPickerViewController;
 			productName = GRPickerViewController;
@@ -285,11 +325,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BA2E1ADE70EC58DF750D5F5FA18BE4CD /* Products */;
+			productRefGroup = 18F57F31204C205FE87B351729821743 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F28C24FFA45B9120FED79E22E0EFA841 /* GRPickerViewController */,
+				6A85EA0147CF2E0E74B23CC97485096E /* GRPickerViewController-GRPickerViewController */,
 				0C209A85BFF7B84CF2130981998A298D /* Pods-GRPickerControllerExample */,
 			);
 		};
@@ -303,34 +344,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD81A6F225D2FABFBF7211578A35DEE8 /* Resources */ = {
+		70C341C66DE1FCC90662CB76965C9850 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD1E8C07F245DEE0EDBEE2DC3000577 /* Data in Resources */,
-				108EA5B4C6226525FB736147378BD691 /* Flags in Resources */,
-				3A3614809572E045FF964D2CDF419991 /* Images in Resources */,
+				6611AC1452EB446018EEE7CA3F670CEA /* Data in Resources */,
+				4610A9F739F93FE953DC374388C9EB1B /* Flags in Resources */,
+				5451B2F7409A3DC63F0ABE078453A165 /* GRPickerViewController.bundle in Resources */,
+				0C3BF8C919E1D047A51D1A073C0AD5B7 /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE11058BF13469A555E9D40638FE6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0F4D45F4CCA0C3BC3C3AD5726A9B605 /* Data in Resources */,
+				F39F711C6EDD13A9D0CBF28F8F40E27C /* Flags in Resources */,
+				2258D230062113F8237FA7A44E7BE45C /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B6C0803F40EABE7B8571FC26057D4532 /* Sources */ = {
+		2A8813A3ACA867FDD8AAFB97108720D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9655D7078964B73B8694B0AAF0D5DA0E /* CountryTableViewCell.swift in Sources */,
-				F26979785E6291182B9352F51A7E147F /* CurrencyTableViewCell.swift in Sources */,
-				0E8F32E7B5781A75A92C8AD42A90C841 /* DataInfo.swift in Sources */,
-				F08B1F7D709FD32BED0FB5A022D780CB /* GRPickerDelegate.swift in Sources */,
-				0DBEBC1514D51CEDA76EEE54A8161AA1 /* GRPickerViewController-dummy.m in Sources */,
-				E15637F3DF22DB9BB95D8FD2862E164F /* GRPickerViewController.swift in Sources */,
-				053EE484247733D8FAFE69D3FB315636 /* LocalData.swift in Sources */,
-				2C534BC1767C87ABEC037AFEE0099A44 /* PhoneCodeTableViewCell.swift in Sources */,
-				8A74EF804A7BF09DBB56716FA2008DE4 /* UIImage+Extension.swift in Sources */,
-				B4AB81CD2EED68EF3A8E37037D818C21 /* UISearchBar+Extension.swift in Sources */,
-				8C6BC9E06DD1BDAB442736676F1A9BCA /* UIView+Extension.swift in Sources */,
+				9229FE9FBF29B3D8CC1DEAFBE99085E9 /* CountryTableViewCell.swift in Sources */,
+				5601951C7B8CCCE3D79B0C61F36E5BAD /* CurrencyTableViewCell.swift in Sources */,
+				8F1EDE133E93AFDA5071B238FDDE62F2 /* DataInfo.swift in Sources */,
+				908325F4878D71B8D0CD0997AA94F59C /* GRPickerDelegate.swift in Sources */,
+				724A70A32F104EAA4B694F8E18436893 /* GRPickerViewController-dummy.m in Sources */,
+				5A44C472FEF407EECF10A2F56906C5A5 /* GRPickerViewController.swift in Sources */,
+				2C9549A858EE30DF9221BE3314ACAF79 /* LocalData.swift in Sources */,
+				BC5F95723D4C2B0382C89390BA3BCBE4 /* PhoneCodeTableViewCell.swift in Sources */,
+				319DF1CC285A8EEEFD254BDC6912F96B /* UIImage+Extension.swift in Sources */,
+				D893BF5F12B78BC098F7EB96B4FE2ACE /* UISearchBar+Extension.swift in Sources */,
+				4E986A23EE0F45E63F541A953076FD1C /* UIView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33E09A1C4B9D47774EDD8576A012AA63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +404,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		642788FE8565DD5A87253CFAB5CE7E19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GRPickerViewController-GRPickerViewController";
+			target = 6A85EA0147CF2E0E74B23CC97485096E /* GRPickerViewController-GRPickerViewController */;
+			targetProxy = 9F49AF3BA1D677A55508CA736472A8D7 /* PBXContainerItemProxy */;
+		};
 		7A76FE0D1527E93CAF4E95339D25E79E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GRPickerViewController;
@@ -354,39 +419,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DD0ABEBD7B30213C9EE1C59FB62C506 /* Release */ = {
+		1628A66905BD4657EC48772D1FC54071 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9007BC87295D32E0A5B293F15AA5AC8 /* GRPickerViewController.release.xcconfig */;
+			baseConfigurationReference = DF1C60C9716A295DFC1348E20D475461 /* GRPickerViewController.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GRPickerViewController/GRPickerViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GRPickerViewController";
+				IBSC_MODULE = GRPickerViewController;
+				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/ResourceBundle-GRPickerViewController-GRPickerViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController.modulemap";
-				PRODUCT_MODULE_NAME = GRPickerViewController;
 				PRODUCT_NAME = GRPickerViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -428,6 +473,41 @@
 			};
 			name = Release;
 		};
+		62125933A07324FC67921D160FFE7026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D833A3F094F604E9816830646946DA75 /* GRPickerViewController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRPickerViewController/GRPickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController.modulemap";
+				PRODUCT_MODULE_NAME = GRPickerViewController;
+				PRODUCT_NAME = GRPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6614AFC222D731C6CC36BBA84A21B81C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E3817389A54A928636F0736241D6F23 /* Pods-GRPickerControllerExample.debug.xcconfig */;
@@ -465,38 +545,19 @@
 			};
 			name = Debug;
 		};
-		6E0A36D0DDB4F50AA6B00DCDD534E937 /* Debug */ = {
+		66522FE149811244C8E7812E65EF2AC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74DC9108CB1A53B099D533C56AF6EF3E /* GRPickerViewController.debug.xcconfig */;
+			baseConfigurationReference = D833A3F094F604E9816830646946DA75 /* GRPickerViewController.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GRPickerViewController/GRPickerViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GRPickerViewController";
+				IBSC_MODULE = GRPickerViewController;
+				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/ResourceBundle-GRPickerViewController-GRPickerViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController.modulemap";
-				PRODUCT_MODULE_NAME = GRPickerViewController;
 				PRODUCT_NAME = GRPickerViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -628,9 +689,54 @@
 			};
 			name = Release;
 		};
+		F2BFC81019709FED8AE6A26271B7D380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF1C60C9716A295DFC1348E20D475461 /* GRPickerViewController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GRPickerViewController/GRPickerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GRPickerViewController/GRPickerViewController.modulemap";
+				PRODUCT_MODULE_NAME = GRPickerViewController;
+				PRODUCT_NAME = GRPickerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		47BF234BE5664926E3B0ACE9E13E78EF /* Build configuration list for PBXNativeTarget "GRPickerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62125933A07324FC67921D160FFE7026 /* Debug */,
+				F2BFC81019709FED8AE6A26271B7D380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -640,11 +746,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		946CE379CFE69C299C78BD4833DFA4F7 /* Build configuration list for PBXNativeTarget "GRPickerViewController" */ = {
+		77A72D06AABE81B1E2C095110AF36FB9 /* Build configuration list for PBXNativeTarget "GRPickerViewController-GRPickerViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E0A36D0DDB4F50AA6B00DCDD534E937 /* Debug */,
-				0DD0ABEBD7B30213C9EE1C59FB62C506 /* Release */,
+				66522FE149811244C8E7812E65EF2AC8 /* Debug */,
+				1628A66905BD4657EC48772D1FC54071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
