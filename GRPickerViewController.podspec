@@ -104,10 +104,10 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "GRPickerViewController/GRPickerViewController/Countries.bundle/*"
-#   spec.resource_bundles = {
-#     'GRPickerViewController' => ['GRPickerViewController/GRPickerViewController/Countries.bundle/*']
-# }
+  spec.resource  = "GRPickerViewController/GRPickerViewController/GRPickerViewController.bundle/*"
+  spec.resource_bundles = {
+    'GRPickerViewController' => ['GRPickerViewController/GRPickerViewController/GRPickerViewController.bundle/*']
+}
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

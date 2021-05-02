@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FA6B131263D44F2003268FD /* GRPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA6B12F263D44F2003268FD /* GRPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FA6B158263D46CC003268FD /* Countries.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B157263D46CC003268FD /* Countries.bundle */; };
+		2FA6B158263D46CC003268FD /* GRPickerViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2FA6B157263D46CC003268FD /* GRPickerViewController.bundle */; };
 		2FA6B15D263D490E003268FD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15A263D490E003268FD /* UIView+Extension.swift */; };
 		2FA6B15E263D490E003268FD /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15B263D490E003268FD /* UIImage+Extension.swift */; };
 		2FA6B15F263D490E003268FD /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA6B15C263D490E003268FD /* UISearchBar+Extension.swift */; };
@@ -24,7 +24,7 @@
 		2FA6B12C263D44F2003268FD /* GRPickerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GRPickerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA6B12F263D44F2003268FD /* GRPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRPickerViewController.h; sourceTree = "<group>"; };
 		2FA6B130263D44F2003268FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FA6B157263D46CC003268FD /* Countries.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Countries.bundle; sourceTree = "<group>"; };
+		2FA6B157263D46CC003268FD /* GRPickerViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GRPickerViewController.bundle; sourceTree = "<group>"; };
 		2FA6B15A263D490E003268FD /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		2FA6B15B263D490E003268FD /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		2FA6B15C263D490E003268FD /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				2FA6B164263D49E3003268FD /* DataInfo.swift */,
 				2FA6B162263D49C1003268FD /* LocalData.swift */,
 				2FA6B159263D490E003268FD /* Extension */,
-				2FA6B157263D46CC003268FD /* Countries.bundle */,
+				2FA6B157263D46CC003268FD /* GRPickerViewController.bundle */,
 				2FA6B12F263D44F2003268FD /* GRPickerViewController.h */,
 				2FA6B130263D44F2003268FD /* Info.plist */,
 				2FA6B160263D4953003268FD /* GRPickerViewController.swift */,
@@ -166,7 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA6B158263D46CC003268FD /* Countries.bundle in Resources */,
+				2FA6B158263D46CC003268FD /* GRPickerViewController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,10 +18,6 @@
   },
   "source_files": "GRPickerViewController/GRPickerViewController/**/*.{swift}",
   "exclude_files": "Classes/Exclude",
-  "resource_bundles": {
-    "GRPickerViewController": [
-      "GRPickerViewController/GRPickerViewController/Countries.bundle/*"
-    ]
-  },
+  "resources": "GRPickerViewController/GRPickerViewController/Countries.bundle/*",
   "swift_version": "5.0"
 }

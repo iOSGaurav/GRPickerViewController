@@ -29,7 +29,7 @@ struct LocalData {
     
     public static func getInfo(completionHandler: @escaping (FetchResults) -> ()) {
         let bundle = Bundle(for: GRPickerViewController.self)
-        let path = "Countries.bundle/Data/CountryCodes"
+        let path = "GRPickerViewController.bundle/Data/CountryCodes"
         
         guard let jsonPath = bundle.path(forResource: path, ofType: "json"),
             let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) else {
