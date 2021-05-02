@@ -20,7 +20,11 @@ public struct DataInfo {
     public var phoneCode: String
     
     public var flag: UIImage? {
+        #if SWIFT_PACKAGE
+        let bundle = Bundle.module
+        #else
         let bundle = Bundle(for: GRPickerViewController.self)
+        #endif
         return UIImage(named: "GRPickerViewController.bundle/Images/\(code.uppercased())", in: bundle, compatibleWith: nil)
     }
     

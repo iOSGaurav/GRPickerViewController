@@ -28,7 +28,11 @@ struct LocalData {
     }
     
     public static func getInfo(completionHandler: @escaping (FetchResults) -> ()) {
+        #if SWIFT_PACKAGE
+        let bundle = Bundle.module
+        #else
         let bundle = Bundle(for: GRPickerViewController.self)
+        #endif
         let path = "GRPickerViewController.bundle/Data/CountryCodes"
         
         guard let jsonPath = bundle.path(forResource: path, ofType: "json"),
