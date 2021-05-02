@@ -1,9 +1,10 @@
 # GRPickerViewController
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vsouza/awesome-ios)
-[![License](https://img.shields.io/badge/License-MIT-8D6E63.svg)](LICENSE)  
+[![License](https://img.shields.io/badge/License-MIT-8D6E63.svg)](LICENSE)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg)](https://github.com/apple/swift-package-manager)
+[![Version](https://img.shields.io/cocoapods/v/SKCountryPicker.svg?style=flat)](https://cocoapods.org/pods/GRPickerViewController)
 
 A simple, customizable Picker for picking country , country code & Currency.
 
