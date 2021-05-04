@@ -27,5 +27,20 @@ A simple, customizable Picker for picking country , country code & Currency.
 - iOS 10.0+ Support latest release iOS 14.5
 - Xcode 10.2+ Support latest Xcode 12 with Swift 5
 
-## Getting Started
-Example:
+## Installation
+
+GRPickerViewController is available through Cocoapods and Swift Package Manager.
+
+#### [CocoaPods](http://cocoapods.org):
+Add the following line to your Podfile:
+```ruby
+pod 'GRPickerViewController'
+```
+
+#### [SPM](https://swift.org/package-manager/)
+
+Add the following line to your Package.swift file in the dependencies section:
+
+```
+.package(url: "https://github.com/iOSGaurav/GRPickerViewController.git", from "1.0.0")
+```
