@@ -21,6 +21,7 @@ A simple, customizable Picker for picking country , country code & Currency.
 - [x] Dark mode supported in iOS 13
 - [x] Support Dynamic font size for ContentSizeCategory
 - [x] Swift package manager integrated
+- [x] Cocoa Pods integrated
 
 ## Requirements
 
