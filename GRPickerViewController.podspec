@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GRPickerViewController"
-  spec.version      = "0.0.5"
-  spec.summary      = "A short description of GRPickerViewController."
+  spec.version      = "1.0.0"
+  spec.summary      = "GRPickerViewController is use for selecting Country,Country Code & Currency Code "
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
