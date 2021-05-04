@@ -45,3 +45,16 @@ Add the following line to your Package.swift file in the dependencies section:
 ```
 .package(url: "https://github.com/iOSGaurav/GRPickerViewController.git", from "1.0.0")
 ```
+
+
+## Contributing
+
+Any contribution making project better is welcome.
+
+## Authors
+
+[***Gaurav Parmar**](https://github.com/iOSGaurav)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
